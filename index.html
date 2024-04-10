@@ -18,7 +18,9 @@
                 <li><a href="#Register" id="Register">Register</a></li>
             </ul>
         </nav>
-        <section id="Login">
+        <br />
+        <section id="forms-section">
+
             <h2>Login</h2>
             <form action="" id="Login-form">
                 <label for="email">Email:</label>
@@ -26,12 +28,14 @@
                 <br>
                 <label for="password">Password:</label>
                 <input type="password" id="pass" name="password" required>
+                <label for="show-password"></label>
+                <input type="checkbox" id="show-password">
                 <br>
-                <button type="submit">Login</button>
+                <button type="submit" id="toggle-button">submit</button>
             </form>
-        </section>
-        <section id="Register">
+
             <h2>Register</h2>
+
             <form action="" id="Register-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="your name" required>
@@ -40,13 +44,16 @@
                 <input type="email" id="email" name="email" placeholder="bcd@gmail.com" required>
                 <br>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="Register-pass" name="password" required>
+                <label for="show-password"></label>
+                <input type="checkbox" id="show-password2">
                 <br>
-                <button type="submit">Register</button>
+                <button type="submit" id="toggle-button">submit</button>
             </form>
         </section>
     </header>
-    <main>
+
+    <main id="main-content">
         <h2>Cars for Sale</h2>
         <form>
             <label for="make">Make:</label>
@@ -122,22 +129,11 @@
             <input type="number" id="mileage" name="mileage">
             <button type="submit">Search</button>
         </form>
+
         <ul id="carslist"> </ul>
 
-
-
-        <!-- <li>
-                <h3>2022 Tesla Model S</h3>
-                <p>Starting bid: $80,000</p>
-                <button>Place bid</button>
-            </li>
-            <li>
-                <h3>2021 Ford Mustang</h3>
-                <p>Starting bid: $40,000</p>
-                <button>Place bid</button>
-            </li> -->
     </main>
+    <script src="./index.js"></script>
 </body>
-<script src="./index.js"></script>
 
 </html>

@@ -13,10 +13,93 @@ h1 {
 nav ul li {
     float: left;
     display: block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     text-align: center;
 }
 
 nav ul li a:hover {
     background-color: violet;
+}
+
+section {
+    padding: 10px 30px;
+}
+
+button {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    margin: 0.3em;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+#forms-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#forms-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#forms-section form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+#forms-section label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#forms-section input[type="email"],
+#forms-section input[type="text"],
+#forms-section input[type="password"] {
+    width: 90%;
+    padding: 6px;
+}
+
+form.hidden {
+    display: none;
+}
+
+#carslist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#carslist li {
+    flex-basis: calc(20%);
+    margin-bottom: 4%;
+}
+
+#car-image:hover {
+    transform: scale(1.3);
+    filter: brightness(110%);
+    background-size: cover;
+    background-position: center;
 }

@@ -1,3 +1,43 @@
+const loginInputPass = document.getElementById('pass');
+const registerInputPass = document.getElementById('Register-pass');
+const showPasswordCheckbox = document.getElementById('show-password');
+const showPasswordCheckbox2 = document.getElementById('show-password2');
+showPasswordCheckbox.addEventListener('change', () => {
+    if (showPasswordCheckbox.checked) {
+        loginInputPass.type = 'text';
+    } else {
+        loginInputPass.type = 'password';
+    }
+});
+showPasswordCheckbox2.addEventListener('change', () => {
+    if (showPasswordCheckbox2.checked) {
+        registerInputPass.type = 'text';
+    } else {
+        registerInputPass.type = 'password';
+    }
+});
+
+const loginTab = document.getElementById('Login-tab');
+const registerTab = document.getElementById('Register');
+const formsSection = document.getElementById('forms-section');
+const loginForm = document.getElementById('Login-form');
+const registerForm = document.getElementById('Register-form');
+loginTab.addEventListener('click', () => {
+    showForm(loginForm, registerForm);
+});
+registerTab.addEventListener('click', () => {
+    showForm(registerForm, loginForm);
+});
+showForm(loginForm, registerForm);
+
+function showForm(formToShow, formToHide) {
+    formToShow.style.display = 'block';
+    formToHide.style.display = 'none';
+    formsSection.innerHTML = '';
+    formsSection.appendChild(formToShow);
+}
+
+
 const carsList = document.getElementById('carslist');
 const wishlist = [];
 
@@ -6,10 +46,12 @@ wishlistContainer.id = 'wisheslist';
 document.body.appendChild(wishlistContainer);
 
 const showWishlistButton = document.createElement('button');
-showWishlistButton.textContent = 'Show Wishlist';
+showWishlistButton.textContent = 'My wishlist';
 showWishlistButton.addEventListener('click', () => {
     displayWishlist();
 });
+// const mainContent = document.getElementById('main-content');
+// mainContent.insertBefore(showWishlistButton, mainContent.firstChild);
 document.body.appendChild(showWishlistButton);
 
 fetch("http://localhost:3000/swiftCars")
@@ -19,7 +61,7 @@ fetch("http://localhost:3000/swiftCars")
             const li = document.createElement('li');
 
             const addtoWishlistButton = document.createElement('button');
-            addtoWishlistButton.textContent = 'Add to Wishlist';
+            addtoWishlistButton.textContent = 'Add to wishlist';
             addtoWishlistButton.addEventListener('click', () => {
                 const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
                 wishlist.push(car);
@@ -27,14 +69,22 @@ fetch("http://localhost:3000/swiftCars")
                 displayWishlist();
             });
 
+            const bidButton = document.createElement('button');
+            bidButton.textContent = 'Place  bid';
+            bidButton.addEventListener('click', () => {
+
+            });
+
+
             const imgAnchor = document.createElement('a');
             imgAnchor.href = car.image;
 
             const img = document.createElement('img');
+            img.id = 'car-image';
             img.src = car.image;
             img.alt = `${car.make}${car.model}`;
-            img.width = 200;
-            img.height = 140;
+            img.width = 260;
+            img.height = 180;
 
             imgAnchor.appendChild(img);
 
@@ -59,6 +109,7 @@ fetch("http://localhost:3000/swiftCars")
             li.appendChild(imgAnchor);
             li.appendChild(detailsDiv);
             li.appendChild(addtoWishlistButton);
+            li.appendChild(bidButton);
 
             carsList.appendChild(li);
         });
