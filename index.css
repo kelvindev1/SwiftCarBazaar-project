@@ -1,0 +1,22 @@
+body {
+    background-color: #B2D8D8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+
+}
+
+nav ul li {
+    float: left;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: violet;
+}

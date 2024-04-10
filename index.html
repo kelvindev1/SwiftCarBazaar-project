@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SwiftCarBazaar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>SwiftCarBazaar<br>
+        Honest,Efficient & Diligent</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Login" id="Login-tab">Login</a></li>
+                <li><a href="#Register" id="Register">Register</a></li>
+            </ul>
+        </nav>
+        <section id="Login">
+            <h2>Login</h2>
+            <form action="" id="Login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="mail" name="email" placeholder="abcd@gmail.com" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="pass" name="password" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="Register">
+            <h2>Register</h2>
+            <form action="" id="Register-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="your name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="bcd@gmail.com" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </header>
+    <main>
+        <h2>Cars for Sale</h2>
+        <form>
+            <label for="make">Make:</label>
+            <select name="make" id="make">
+                <option value="Toyota">Toyota</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Audi">Audi</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Ford">Ford</option>
+                <option value="Honda">Honda</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="VolksWagen">VolksWagen</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="BMW">BMW</option>
+                <option value=""></option>
+            </select>
+            <label for="model">Model:</label>
+            <select name="model" id="model">
+                <option value="Camry">Camry</option>
+                <option value="CHARGER">CHARGER</option>
+                <option value="MUSTANG">MUSTANG</option>
+                <option value="Civic-Type R">Civic-Type R</option>
+                <option value="Camaro">Camaro</option>
+                <option value="Fiesta">Fiesta</option>
+                <option value="Golf">Golf</option>
+                <option value="Corolla">Corolla</option>
+                <option value="Civic VTi-L">Civic VTi-L</option>
+                <option value="Micra">Micra</option>
+                <option value="911 Carrera">911 Carrera</option>
+                <option value="Corvette Stingray">Corvette Stingray</option>
+                <option value="R8">R8</option>
+                <option value="F-Type">F-Type</option>
+                <option value="AMG GT">AMG GT</option>
+                <option value="Model 3">Model 3</option>
+                <option value="Ioniq 5">Ioniq 5</option>
+                <option value="Leaf">Leaf</option>
+                <option value="i4">i4</option>
+                <option value="330i">330i</option>
+                <option value="540d">540d</option>
+                <option value="A4">A4</option>
+                <option value="A6">A6</option>
+                <option value="Q5">Q5</option>
+                <option value="Challenger SRT Hellcat">Challenger SRT Hellcat</option>
+                <option value="challenger SRT Demon 170">challenger SRT Demon 170</option>
+                <option value="LX 600">LX 600</option>
+            </select>
+            <label for="condition">Condition:</label>
+            <select id="condition" name="condition">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+            </select>
+            <label for="year">Year:</label>
+            <select name="year" id="year">
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2015">2015</option>
+                <option value="2012">2012</option>
+                <option value="2010">2010</option>
+                <option value="2008">2008</option>
+                <option value="2006">2006</option>
+            </select>
+            <label for="mileage">Mileage:</label>
+            <input type="number" id="mileage" name="mileage">
+            <button type="submit">Search</button>
+        </form>
+        <ul id="carslist"> </ul>
+
+
+
+        <!-- <li>
+                <h3>2022 Tesla Model S</h3>
+                <p>Starting bid: $80,000</p>
+                <button>Place bid</button>
+            </li>
+            <li>
+                <h3>2021 Ford Mustang</h3>
+                <p>Starting bid: $40,000</p>
+                <button>Place bid</button>
+            </li> -->
+    </main>
+</body>
+<script src="./index.js"></script>
+
+</html>

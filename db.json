@@ -1,0 +1,489 @@
+{
+    "swiftCars": [{
+            "id": "1",
+            "make": "Toyota",
+            "model": "Camry",
+            "year": 2022,
+            "price": "$33485",
+            "color": "Burning Black",
+            "mileage": 1000,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://stimg.cardekho.com/images/car-images/930x620/Toyota/Camry/6763/1606299254058/225_BURNING-BLACK_575362.jpg?tr=w-898",
+            "description": "A brand new 2022 Toyota Camry with low mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        }, {
+            "id": "2",
+            "make": "DODGE",
+            "model": "CHARGER",
+            "year": 2022,
+            "price": "$35000",
+            "color": "Black",
+            "mileage": 0,
+            "numberOfDoors": 2,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://img.autobytel.com/chrome/colormatched_01/white/640/cc_2022doc20_01_640/cc_2022doc200132_01_640_px8.jpg",
+            "description": "A brand new 2022 Dodge charger with ZERO mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "3",
+            "make": "FORD",
+            "model": "MUSTANG",
+            "year": 2020,
+            "price": "$55000",
+            "color": "red",
+            "mileage": 20000,
+            "numberOfDoors": 2,
+            "transmissiontype": "manual",
+            "fuelType": "petrol",
+            "Condition": "Good",
+            "image": "https://d2s8i866417m9.cloudfront.net/photo/7799142/photo/medium-a2e8ddef57ca5e6289ae4f29886d2226.jpg",
+            "description": "A used 2020 ford mustang with low mileage and a manual transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "4",
+            "make": "Honda",
+            "model": "Civic-Type R",
+            "year": 2022,
+            "price": "$25000",
+            "color": "white",
+            "mileage": 4000,
+            "numberOfDoors": 4,
+            "transmissiontype": "CVT",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_medium/v1/editorial/2022-Honda-Civic-Type-R-hatch-white-Best-Car-Web-1001x565-1.jpg",
+            "description": "A brand new 2022 Honda Civic with low mileage and a CVT transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "5",
+            "make": "Chevrolet",
+            "model": "Camaro",
+            "year": 2021,
+            "price": "$32000",
+            "color": "purple",
+            "mileage": 15000,
+            "numberOfDoors": 2,
+            "transmissiontype": "manual",
+            "fuelType": "petrol",
+            "Condition": "Good",
+            "image": "https://i.pinimg.com/736x/89/df/e1/89dfe1cdbe612308984cf2b2028f06ac.jpg",
+            "description": "A used 2021 chevrolet camaro with low mileage and a manual transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "6",
+            "make": "FORD",
+            "model": "Fiesta",
+            "year": 2015,
+            "price": "$8000",
+            "color": "NavyBlue",
+            "mileage": 12000,
+            "numberOfDoors": 4,
+            "transmissiontype": "manual",
+            "fuelType": "Diesel",
+            "Condition": "Excellent",
+            "image": "https://hips.hearstapps.com/hmg-prod/images/img-2430-1-1499435942.jpg",
+            "description": "A used 2015 Ford Fiesta with high mileage and manual transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "7",
+            "make": "Volkswagen",
+            "model": "Golf",
+            "year": 2012,
+            "price": "$7000",
+            "color": "Blue",
+            "mileage": 16000,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "Diesel",
+            "Condition": "Good",
+            "image": "https://img.pistonheads.com/Fullsize/volkswagen/golf/2-0-r-5d-270-bhp/volkswagen-golf-2-0-r-5d-270-bhp-1085623720-1.jpg",
+            "description": "A used 2012 Voldkswagen Golf with high mileage and automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "8",
+            "make": "Toyota",
+            "model": "Corolla",
+            "year": 2010,
+            "price": "$6000",
+            "color": "Maroon",
+            "mileage": 17600,
+            "numberOfDoors": 4,
+            "transmissiontype": "manual",
+            "fuelType": "petrol",
+            "Condition": "Good",
+            "image": "https://i.pinimg.com/736x/82/d6/4c/82d64c71512d5bf779f2c96f8a6ca1e8.jpg",
+            "description": "A used 2010 Toyota corolla with high mileage and manual transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "9",
+            "make": "Honda",
+            "model": "Civic VTi-L",
+            "year": 2008,
+            "price": "$4000",
+            "color": "Yellow",
+            "mileage": 200000,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Good",
+            "image": "https://carsales.pxcrush.net/carsales//cars/private/1bc4nzxnwee8qutl9w4xf1q74.jpg?pxc_method=limitfill&pxc_bgtype=self&pxc_size=720,360",
+            "description": "A used 2008 Honda Civic  with very high mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "10",
+            "make": "Nissan",
+            "model": "Micra",
+            "year": 2006,
+            "price": "$3OO5",
+            "color": "Blue",
+            "mileage": 221000,
+            "numberOfDoors": 4,
+            "transmissiontype": "Manual",
+            "fuelType": "Diesel",
+            "Condition": "Good",
+            "image": "https://www.picclickimg.com/H10AAOSwgq9l06Wk/NISSAN-MICRA-2006-Blue-Petrol-3-doors.webp",
+            "description": "A used Nissan Micra with very high mileage and manual transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "11",
+            "make": "Porsche",
+            "model": "911 Carrera",
+            "year": 2022,
+            "price": "$120000",
+            "color": "red",
+            "mileage": 4000,
+            "numberOfDoors": 2,
+            "transmissiontype": "Manual",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://hips.hearstapps.com/hmg-prod/images/2022-porche-911-gts-47-1632250920.jpg?crop=0.817xw:0.613xh;0.184xw,0.243xh&resize=1200:*",
+            "description": "A brand new 2022 Porsche 911 Carrera WIth low mileage and Manual transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "12",
+            "make": "Chevrolet",
+            "model": "Corvette Stingray",
+            "year": 2021,
+            "price": "$70485",
+            "color": "red",
+            "mileage": 8000,
+            "numberOfDoors": 2,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://di-uploads-pod30.dealerinspire.com/dancumminschevybuickgmpilot/uploads/2020/12/2021-Chevy-Corvette-Overview-Red.jpg",
+            "description": "A used 2021 Chevrolet Corvette stingray with low mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "13",
+            "make": "Audi",
+            "model": "R8",
+            "year": 2023,
+            "price": "$150485",
+            "color": "Ibis White",
+            "mileage": 6500,
+            "numberOfDoors": 2,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://imgcdn.oto.com/large/gallery/color/1/12/audi-r8-color-615669.jpg",
+            "description": "A fairly used 2023 Audi R8 with low mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "14",
+            "make": "Jaguar",
+            "model": "F-Type",
+            "year": 2019,
+            "price": "$80,485",
+            "color": "Blue",
+            "mileage": 13200,
+            "numberOfDoors": 2,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3lwhaehSnITaIkUt_u5oqHHyCPwiGHovGRUwvLvnB7g&s",
+            "description": "A used 2019 Jaguar F-Type with low mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee",
+                "Tel": "0712345678"
+            }
+        },
+        {
+            "id": "15",
+            "make": "Mercedes-Benz",
+            "model": "AMG GT",
+            "year": 2018,
+            "price": "$103485",
+            "color": "Yellow",
+            "mileage": 14600,
+            "numberOfDoors": 2,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Festival_automobile_international_2015_-_Mercedes_AMG_GT_-_003.jpg/800px-Festival_automobile_international_2015_-_Mercedes_AMG_GT_-_003.jpg",
+            "description": "A used 2018 Mercedes-Benz AMG GT with low mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "16",
+            "make": "Tesla",
+            "model": "Model 3",
+            "year": 2024,
+            "price": "$45000",
+            "color": "Black",
+            "mileage": 0,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "Eletric",
+            "Condition": "Excellent",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnq0LMnoCL0IJODAqfC1PutPJ7_noOpa5BzI_P-RASpg&s",
+            "description": "A brand new 2024 Tesla Model 3 with ZERO mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "17",
+            "make": "Hyundai",
+            "model": "Ioniq 5",
+            "year": 2024,
+            "price": "$45485",
+            "color": "Green",
+            "mileage": 0,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "Eletric",
+            "Condition": "Excellent",
+            "image": "https://cdn.mobilesyrup.com/wp-content/uploads/2021/12/Ioniq-5-scaled.jpg",
+            "description": "A brand new 2024 Hyundai Ioniq 5 with ZERO mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "18",
+            "make": "Nissan",
+            "model": "Leaf",
+            "year": 2024,
+            "price": "$30000",
+            "color": "Yellow",
+            "mileage": 0,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "Eletric",
+            "Condition": "Excellent",
+            "image": "https://carsales.pxcrush.net/carsales//car/dealer/6dee725be96cf6f01859d149c59372fd.jpg?pxc_method=limitfill&pxc_bgtype=self&pxc_size=720,360",
+            "description": "A brand new 2024 Nissan Leaf with ZERO mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "19",
+            "make": "BMW",
+            "model": "i4",
+            "year": 2024,
+            "price": "$55005",
+            "color": "NavyBlue",
+            "mileage": 0,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://www.bmwusa.com/content/dam/bmw/common/vehicles/2023/my24/all-electric/i4/gran-coupe/overview/mobile/BMW-MY24-i4-Overview-Performance-01-Mobile.jpg",
+            "description": "A brand new 2024 BMW i4 with ZERO mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "20",
+            "make": "BMW",
+            "model": "330i",
+            "year": 2023,
+            "price": "$45000",
+            "color": "Black",
+            "mileage": 10000,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Good",
+            "image": "https://vehicle-images.dealerinspire.com/stock-images/thumbnails/large/chrome/fcaf05776a2abdc2d8cd91734ab8443b.png",
+            "description": "A used 2023 BMW 330i with low mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "21",
+            "make": "BMW",
+            "model": "540d",
+            "year": 2024,
+            "price": "$65000",
+            "color": "NavyBlue",
+            "mileage": 15400,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "Diesel",
+            "Condition": "Excellent",
+            "image": "https://cdn.bmwblog.com/wp-content/uploads/2023/06/2024-BMW-520d-xDrive-41-scaled.jpg",
+            "description": "A used 2024 BMW 540d with low mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "22",
+            "make": "Audi",
+            "model": "A4",
+            "year": 2023,
+            "price": "$40000",
+            "color": "Black",
+            "mileage": 15400,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Good",
+            "image": "https://i.ytimg.com/vi/vBCsPli3HJI/maxresdefault.jpg",
+            "description": "A used 2023 Audi A4 with low mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "23",
+            "make": "Audi",
+            "model": "A6",
+            "year": 2024,
+            "price": "$60000",
+            "color": "NavyBlue",
+            "mileage": 0,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "Diesel",
+            "Condition": "Excellent",
+            "image": "https://images.dealer.com/ddc/vehicles/2024/Audi/A6/Sedan/trim_45_Progressiv_a5dd70/color/Firmament%20Blue%20Metallic-5U5U-24,32,45-640-en_CA.jpg",
+            "description": "A brand new 2024 Audi A6 with ZERO mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "24",
+            "make": "Audi",
+            "model": "Q5",
+            "year": 2023,
+            "price": "$50000",
+            "color": "red",
+            "mileage": 19690,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://i.ytimg.com/vi/Yq4TB1wMgoM/maxresdefault.jpg",
+            "description": "A used 2023 Audi Q5 with low mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "25",
+            "make": "DODGE",
+            "model": "Challenger SRT Hellcat",
+            "year": 2023,
+            "price": "$85000",
+            "color": "Blue",
+            "mileage": 29350,
+            "numberOfDoors": 2,
+            "transmissiontype": "Manual",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://www.autozeitung.de/assets/styles/article_image/public/field/images/dodge-challenger-srt-hellcat-facelift-2018-1.jpg?itok=9zOSx9tL",
+            "description": "A used 2023 Dodge challenger with low mileage and manual transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "26",
+            "make": "DODGE",
+            "model": "challenger SRT Demon 170",
+            "year": 2023,
+            "price": "$100000",
+            "color": "red",
+            "mileage": 1200,
+            "numberOfDoors": 2,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2017/04/2018-Dodge-Challenger-SRT-Demon-113.jpg",
+            "description": "A brand new 2024 Dodge Demon with low mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        },
+        {
+            "id": "27",
+            "make": "Lexus",
+            "model": "LX 600",
+            "year": 2024,
+            "price": "$85000",
+            "color": "Silver",
+            "mileage": 4130,
+            "numberOfDoors": 4,
+            "transmissiontype": "Automatic",
+            "fuelType": "petrol",
+            "Condition": "Excellent",
+            "image": "https://di-uploads-pod23.dealerinspire.com/lexusofnorthborough/uploads/2023/11/LX_Ultra_Luxury_2-1500x844-1.jpg",
+            "description": "A used 2024 Lexus LX with very low mileage and Automatic transmission.",
+            "contactInformation": {
+                "Name": "Calvin cee"
+            }
+        }
+    ]
+}
