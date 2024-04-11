@@ -6,23 +6,67 @@ body {
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2em;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    margin-bottom: 1%;
+    justify-content: space-between
+}
+
+#showroom {
+    width: 30%;
+    height: auto;
+    margin-right: 10px;
 
 }
 
-nav ul li {
+#bestbids {
+    align-self: center;
+    width: 50%;
+    height: 320px;
+    margin-left: 50px;
+}
+
+header ul li {
     float: left;
-    display: block;
-    padding: 10px 30px;
-    text-align: center;
+    display: flex;
+    padding: 10px 40px;
 }
 
 nav ul li a:hover {
     background-color: violet;
+    border-radius: 8px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
 }
 
 section {
     padding: 10px 30px;
+}
+
+#main-content {
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 button {

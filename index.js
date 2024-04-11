@@ -1,5 +1,6 @@
 const loginInputPass = document.getElementById('pass');
 const registerInputPass = document.getElementById('Register-pass');
+const confirmRegPass = document.getElementById('confirmPassword');
 const showPasswordCheckbox = document.getElementById('show-password');
 const showPasswordCheckbox2 = document.getElementById('show-password2');
 showPasswordCheckbox.addEventListener('change', () => {
@@ -12,8 +13,10 @@ showPasswordCheckbox.addEventListener('change', () => {
 showPasswordCheckbox2.addEventListener('change', () => {
     if (showPasswordCheckbox2.checked) {
         registerInputPass.type = 'text';
+        confirmRegPass.type = 'text';
     } else {
         registerInputPass.type = 'password';
+        confirmRegPass.type = 'password';
     }
 });
 
@@ -50,8 +53,7 @@ showWishlistButton.textContent = 'My wishlist';
 showWishlistButton.addEventListener('click', () => {
     displayWishlist();
 });
-// const mainContent = document.getElementById('main-content');
-// mainContent.insertBefore(showWishlistButton, mainContent.firstChild);
+
 document.body.appendChild(showWishlistButton);
 
 fetch("http://localhost:3000/swiftCars")

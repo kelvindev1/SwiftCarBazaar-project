@@ -12,6 +12,11 @@
     <h1>SwiftCarBazaar<br>
         Honest,Efficient & Diligent</h1>
     <header>
+        <img src="https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2023/07/31081424/Types-of-Sports-Cars-_-Cover-27-7-23.jpg"
+            alt="showroom" id="showroom">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQndpzBRXG40a1AZVKZV3eHVoeNIMrfr5ofaI3odVgz5A&s"
+            alt="best bids" id="bestbids">
+
         <nav>
             <ul>
                 <li><a href="#Login" id="Login-tab">Login</a></li>
@@ -27,7 +32,7 @@
                 <input type="email" id="mail" name="email" placeholder="abcd@gmail.com" required>
                 <br>
                 <label for="password">Password:</label>
-                <input type="password" id="pass" name="password" required>
+                <input type="password" id="pass" name="password" placeholder="xxxxxxxxxx" required>
                 <label for="show-password"></label>
                 <input type="checkbox" id="show-password">
                 <br>
@@ -37,14 +42,17 @@
             <h2>Register</h2>
 
             <form action="" id="Register-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="your name" required>
+                <label for="Username">Username:</label>
+                <input type="text" id="Username" name="Username" placeholder="your Username" required>
                 <br>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="bcd@gmail.com" required>
+                <input type="email" id="email" name="email" placeholder="abcd@gmail.com" required>
                 <br>
                 <label for="password">Password:</label>
-                <input type="password" id="Register-pass" name="password" required>
+                <input type="password" id="Register-pass" name="password" placeholder="xxxxxxxxxx" required>
+                <br>
+                <label for="confirmPassword">Confirm password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="xxxxxxxxxx" required>
                 <label for="show-password"></label>
                 <input type="checkbox" id="show-password2">
                 <br>
@@ -52,10 +60,9 @@
             </form>
         </section>
     </header>
-
-    <main id="main-content">
+    <main>
         <h2>Cars for Sale</h2>
-        <form>
+        <form class="car-search-form">
             <label for="make">Make:</label>
             <select name="make" id="make">
                 <option value="Toyota">Toyota</option>
