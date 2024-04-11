@@ -1,6 +1,13 @@
 body {
-    background-color: #B2D8D8;
+    /* background-color: #B2D8D8; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #00FFFF;
+    color: #222;
+}
+
+body.dark-theme {
+    color: #ddd;
+    background: #222;
 
 }
 

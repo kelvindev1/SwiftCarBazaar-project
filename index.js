@@ -1,3 +1,15 @@
+const btn = document.querySelector('.btn-toogle');
+btn.addEventListener('click', function () {
+    document.body.classList.toggle('dark-theme');
+    const theme = document.getElementById('theme-link');
+    if (document.body.classList.contains('dark-theme')) {
+        theme.href = "dark-theme.css";
+    } else {
+        theme.href = "light-theme.css";
+    }
+});
+
+
 const loginInputPass = document.getElementById('pass');
 const registerInputPass = document.getElementById('Register-pass');
 const confirmRegPass = document.getElementById('confirmPassword');
