@@ -56,17 +56,18 @@ function showForm(formToShow, formToHide) {
 const carsList = document.getElementById('carslist');
 const wishlist = [];
 
+
 const wishlistContainer = document.createElement('div');
 wishlistContainer.id = 'wisheslist';
 document.body.appendChild(wishlistContainer);
 
-const showWishlistButton = document.createElement('button');
-showWishlistButton.textContent = 'My wishlist';
-showWishlistButton.addEventListener('click', () => {
+
+let buyersWishlistButton = document.createElement('button');
+buyersWishlistButton.textContent = 'Buyers wishlist';
+buyersWishlistButton.addEventListener('click', () => {
     displayWishlist();
 });
-
-document.body.appendChild(showWishlistButton);
+document.body.insertBefore(buyersWishlistButton, wishlistContainer);
 
 fetch("http://localhost:3000/swiftCars")
     .then(Response => Response.json())
