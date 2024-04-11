@@ -87,6 +87,21 @@ fetch("http://localhost:3000/swiftCars")
             const bidButton = document.createElement('button');
             bidButton.textContent = 'Place  bid';
             bidButton.addEventListener('click', () => {
+                const bidFormContainer = document.createElement('div');
+                bidFormContainer.className = "bid-form-Container";
+                bidFormContainer.style.display = 'block';
+
+
+                const bidForm = document.createElement('form');
+                bidForm.innerHTML = `
+                <label for="bid-amount">Bid Amount:</label><br>
+                <input type="number" id="bid-amount" name="bid-amount" required><br>
+                <label for="bidder-name">Bidder Name:</label><br>
+                <input type="text" id="bidder-name" name="bidder-name" required><br>
+                <input type="submit" value="Place Bid">
+              `;
+                bidFormContainer.appendChild(bidForm);
+                bidButton.parentNode.insertBefore(bidForm, bidButton.nextSibling);
 
             });
 

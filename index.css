@@ -153,3 +153,7 @@ form.hidden {
     background-size: cover;
     background-position: center;
 }
+
+.bid-form-Container {
+    display: none;
+}
