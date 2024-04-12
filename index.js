@@ -62,13 +62,6 @@ wishlistContainer.id = 'wisheslist';
 document.body.appendChild(wishlistContainer);
 
 
-let buyersWishlistButton = document.createElement('button');
-buyersWishlistButton.textContent = 'Buyers wishlist';
-buyersWishlistButton.addEventListener('click', () => {
-    displayWishlist();
-});
-document.body.insertBefore(buyersWishlistButton, wishlistContainer);
-
 fetch("http://localhost:3000/swiftCars")
     .then(Response => Response.json())
     .then(data => {
@@ -81,27 +74,37 @@ fetch("http://localhost:3000/swiftCars")
                 const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
                 wishlist.push(car);
                 localStorage.setItem('wishlist', JSON.stringify(wishlist));
-                displayWishlist();
             });
+
 
             const bidButton = document.createElement('button');
             bidButton.textContent = 'Place  bid';
+            let formShown = false;
+
             bidButton.addEventListener('click', () => {
                 const bidFormContainer = document.createElement('div');
                 bidFormContainer.className = "bid-form-Container";
-                bidFormContainer.style.display = 'block';
 
+                if (!formShown) {
+                    bidFormContainer.style.display = "block";
+                    formShown = true;
 
-                const bidForm = document.createElement('form');
-                bidForm.innerHTML = `
-                <label for="bid-amount">Bid Amount:</label><br>
-                <input type="number" id="bid-amount" name="bid-amount" required><br>
-                <label for="bidder-name">Bidder Name:</label><br>
-                <input type="text" id="bidder-name" name="bidder-name" required><br>
-                <input type="submit" value="Place Bid">
-              `;
-                bidFormContainer.appendChild(bidForm);
-                bidButton.parentNode.insertBefore(bidForm, bidButton.nextSibling);
+                    const bidForm = document.createElement('form');
+                    bidForm.innerHTML = `
+                    <label for="bid-amount">Bid Amount:</label><br>
+                    <input type="number" id="bid-amount" name="bid-amount" required><br>
+                    <label for="bidder-name">Bidder Name:</label><br>
+                    <input type="text" id="bidder-name" name="bidder-name" required><br>
+                    <input type="submit" value="Place Bid">
+                    `;
+                    bidFormContainer.appendChild(bidForm);
+                    bidButton.parentNode.insertBefore(bidForm, bidButton.nextSibling);
+                    bidButton.style.display = 'block';
+                } else {
+                    bidFormContainer.style.display = "none";
+                    formShown = false;
+                    bidButton.style.display = 'none';
+                }
 
             });
 
@@ -167,6 +170,18 @@ function displayWishlist() {
         li.appendChild(deleteButton);
 
         ul.appendChild(li);
+
+
     });
+    if (wishlist.length > 0) {
+        wishlistContainer.classList.remove('hidden');
+    }
     wishlistContainer.appendChild(ul);
 }
+
+const buyersWishlistButton = document.createElement('button');
+buyersWishlistButton.textContent = 'Buyers wishlist';
+buyersWishlistButton.addEventListener('click', () => {
+    displayWishlist();
+});
+document.body.appendChild(buyersWishlistButton);

@@ -1,5 +1,4 @@
 body {
-    /* background-color: #B2D8D8; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #00FFFF;
     color: #222;
@@ -32,7 +31,7 @@ header img {
 #showroom {
     width: 30%;
     height: auto;
-    margin-right: 10px;
+    margin-right: 20px;
 
 }
 
@@ -40,7 +39,7 @@ header img {
     align-self: center;
     width: 50%;
     height: 320px;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 header ul li {
@@ -152,8 +151,4 @@ form.hidden {
     filter: brightness(110%);
     background-size: cover;
     background-position: center;
-}
-
-.bid-form-Container {
-    display: none;
 }
