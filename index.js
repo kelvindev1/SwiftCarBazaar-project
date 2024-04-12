@@ -56,6 +56,18 @@ function showForm(formToShow, formToHide) {
     formsSection.appendChild(formToShow);
 }
 
+loginForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (loginInputPass.value === registerInputPass.value) {
+        if (loginForm.checkValidity()) {
+            alert('You have successfully logged in!');
+        } else {
+            loginForm.reportValidity();
+        }
+    } else {
+        alert('You don\'t have an existing account with us. Please register first.');
+    }
+});
 
 registerForm.addEventListener('submit', (event) => {
     event.preventDefault();
