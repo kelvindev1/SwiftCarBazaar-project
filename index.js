@@ -107,8 +107,13 @@ fetch("http://localhost:3000/swiftCars")
             addtoWishlistButton.textContent = 'Add to wishlist';
             addtoWishlistButton.addEventListener('click', () => {
                 const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-                wishlist.push(car);
-                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+                if (wishlist.some(car => car.id === car.id)) {
+                    alert(`${car.make} ${car.model} already exists in your wishlist !`);
+                } else {
+                    wishlist.push(car);
+                    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+                    alert(`You have added ${car.make} ${car.model} to your wishlist.`);
+                }
             });
 
 
