@@ -18,18 +18,15 @@
             alt="showroom" id="showroom">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQndpzBRXG40a1AZVKZV3eHVoeNIMrfr5ofaI3odVgz5A&s"
             alt="best bids" id="bestbids">
-
         <nav>
             <ul>
                 <li><a href="#Login" id="Login-tab">Login</a></li>
                 <li><a href="#Register" id="Register">Register</a></li>
             </ul>
         </nav>
-        <br />
-        <section id="forms-section">
-
+        <section id="forms-section" style="display: none;">
             <h2>Login</h2>
-            <form action="" id="Login-form">
+            <form action=" #" id="Login-form">
                 <label for="email">Email:</label>
                 <input type="email" id="mail" name="email" placeholder="abcd@gmail.com" required>
                 <br>
@@ -40,10 +37,8 @@
                 <br>
                 <button type="submit" id="toggle-button">submit</button>
             </form>
-
             <h2>Register</h2>
-
-            <form action="" id="Register-form">
+            <form action="#" id="Register-form">
                 <label for="Username">Username:</label>
                 <input type="text" id="Username" name="Username" placeholder="your Username" required>
                 <br>
@@ -62,8 +57,9 @@
             </form>
         </section>
     </header>
+
     <main id="main-content">
-        <h2>Cars for Sale</h2>
+        <h2>Browse Our Selection of Quality Cars with SwiftCarBazaar</h2>
         <form class="car-search-form">
             <label for="make">Make:</label>
             <select name="make" id="make">
@@ -137,9 +133,8 @@
             <label for="mileage">Mileage:</label>
             <input type="number" id="mileage" name="mileage">
             <button type="submit">Apply</button>
-            <ul id="carslist">
-            </ul>
         </form>
+        <ul id="carslist"></ul>
     </main>
 
 
@@ -154,7 +149,6 @@
     </div>
 
     <footer>
-        <h4>For more clarification you can contact customercare</h4>
         <h4>Customercare details:</h4>
         <p>Phone:xxxxxxxxxxx <br>
             Email:........@gmail.com

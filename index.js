@@ -11,8 +11,8 @@ btn.addEventListener('click', function () {
 
 
 const loginInputPass = document.getElementById('pass');
-const registerInputPass = document.getElementById('Register-pass');
-const confirmRegPass = document.getElementById('confirmPassword');
+const registerInputPass = document.getElementById('Register-pass')
+const confirmRegPass = document.getElementById('confirmPassword')
 const showPasswordCheckbox = document.getElementById('show-password');
 const showPasswordCheckbox2 = document.getElementById('show-password2');
 showPasswordCheckbox.addEventListener('change', () => {
@@ -37,10 +37,14 @@ const registerTab = document.getElementById('Register');
 const formsSection = document.getElementById('forms-section');
 const loginForm = document.getElementById('Login-form');
 const registerForm = document.getElementById('Register-form');
-loginTab.addEventListener('click', () => {
+loginTab.addEventListener('click', (event) => {
+    formsSection.style.display = 'block';
+    event.preventDefault();
     showForm(loginForm, registerForm);
 });
-registerTab.addEventListener('click', () => {
+registerTab.addEventListener('click', (event) => {
+    formsSection.style.display = 'block';
+    event.preventDefault();
     showForm(registerForm, loginForm);
 });
 showForm(loginForm, registerForm);
@@ -51,6 +55,20 @@ function showForm(formToShow, formToHide) {
     formsSection.innerHTML = '';
     formsSection.appendChild(formToShow);
 }
+
+
+registerForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (registerInputPass.value === confirmRegPass.value) {
+        if (registerForm.checkValidity()) {
+            alert('You have successfully registered with us!');
+        } else {
+            registerForm.reportValidity();
+        }
+    } else {
+        alert('Passwords do not match!');
+    }
+});
 
 
 const carsList = document.getElementById('carslist');
