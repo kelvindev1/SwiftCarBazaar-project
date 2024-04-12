@@ -19,7 +19,7 @@
     },
     {
       "id": "2",
-      "make": "DODGE",
+      "make": "Dodge",
       "model": "CHARGER",
       "year": 2022,
       "price": "$35000",
@@ -37,7 +37,7 @@
     },
     {
       "id": "3",
-      "make": "FORD",
+      "make": "Ford",
       "model": "MUSTANG",
       "year": 2020,
       "price": "$55000",
@@ -91,7 +91,7 @@
     },
     {
       "id": "6",
-      "make": "FORD",
+      "make": "Ford",
       "model": "Fiesta",
       "year": 2015,
       "price": "$8000",
@@ -434,7 +434,7 @@
     },
     {
       "id": "25",
-      "make": "DODGE",
+      "make": "Dodge",
       "model": "Challenger SRT Hellcat",
       "year": 2023,
       "price": "$85000",
@@ -452,7 +452,7 @@
     },
     {
       "id": "26",
-      "make": "DODGE",
+      "make": "Dodge",
       "model": "challenger SRT Demon 170",
       "year": 2023,
       "price": "$100000",
