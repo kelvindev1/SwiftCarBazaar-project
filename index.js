@@ -59,8 +59,13 @@ const wishlist = [];
 
 const wishlistContainer = document.createElement('div');
 wishlistContainer.id = 'wisheslist';
-document.body.appendChild(wishlistContainer);
 
+
+const buyersWishlistButton = document.createElement('button');
+buyersWishlistButton.textContent = 'Buyers wishlist';
+buyersWishlistButton.addEventListener('click', () => {
+    displayWishlist();
+});
 
 fetch("http://localhost:3000/swiftCars")
     .then(Response => Response.json())
@@ -143,6 +148,8 @@ fetch("http://localhost:3000/swiftCars")
             li.appendChild(detailsDiv);
             li.appendChild(addtoWishlistButton);
             li.appendChild(bidButton);
+            li.appendChild(buyersWishlistButton);
+            li.appendChild(wishlistContainer);
 
             carsList.appendChild(li);
         });
@@ -169,8 +176,8 @@ function displayWishlist() {
         });
         li.appendChild(deleteButton);
 
-        ul.appendChild(li);
 
+        ul.appendChild(li);
 
     });
     if (wishlist.length > 0) {
@@ -178,10 +185,3 @@ function displayWishlist() {
     }
     wishlistContainer.appendChild(ul);
 }
-
-const buyersWishlistButton = document.createElement('button');
-buyersWishlistButton.textContent = 'Buyers wishlist';
-buyersWishlistButton.addEventListener('click', () => {
-    displayWishlist();
-});
-document.body.appendChild(buyersWishlistButton);
