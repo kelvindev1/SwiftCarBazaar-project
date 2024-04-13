@@ -239,3 +239,24 @@ function displayWishlist() {
     }
     wishlistContainer.appendChild(ul);
 }
+
+
+
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+
+    var emailContent = 'Name: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        'Subject: ' + subject + '\n\n' +
+        message;
+
+    var mailtoLink = 'mailto:kelvinmutugi336@gmail.com?subject=' + subject + '&body=' + encodeURIComponent(emailContent);
+
+    alert('Email client opened with pre-filled message. Hit OK to Proceed.');
+    window.location.href = mailtoLink;
+});

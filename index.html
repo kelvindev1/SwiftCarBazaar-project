@@ -57,6 +57,7 @@
             </form>
         </section>
     </header>
+    <hr>
 
     <main id="main-content">
         <h2>Browse Our Selection of Quality Cars with SwiftCarBazaar</h2>
@@ -136,12 +137,21 @@
         </form>
     </main>
     <ul id="carslist"></ul>
+    <hr>
 
     <footer>
-        <h4>Customercare details:</h4>
-        <p>Phone:xxxxxxxxxxx <br>
-            Email:........@gmail.com
-        </p>
+        <h4>Contact Us</h4>
+        <form id="contactForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
     </footer>
 
     <script src="./index.js"></script>
