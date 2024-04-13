@@ -34,7 +34,7 @@ showPasswordCheckbox2.addEventListener('change', () => {
 
 const loginTab = document.getElementById('Login-tab');
 const registerTab = document.getElementById('Register');
-const formsSection = document.getElementById('forms-section');
+const formsSection = document.getElementById('accountsForms-section');
 const loginForm = document.getElementById('Login-form');
 const registerForm = document.getElementById('Register-form');
 loginTab.addEventListener('click', (event) => {
@@ -131,6 +131,7 @@ fetch("http://localhost:3000/swiftCars")
                     formShown = true;
 
                     const bidForm = document.createElement('form');
+                    bidForm.id = "bid-form";
                     bidForm.innerHTML = `
                     <label for="bid-amount">Bid Amount:</label><br>
                     <input type="number" id="bid-amount" name="bid-amount" required><br>
@@ -141,9 +142,23 @@ fetch("http://localhost:3000/swiftCars")
                     
                     <input type="submit" value="Place Bid">
                     `;
+
                     bidFormContainer.appendChild(bidForm);
                     bidButton.parentNode.insertBefore(bidForm, bidButton.nextSibling);
                     bidButton.style.display = 'block';
+
+                    bidForm.addEventListener('submit', (event) => {
+                        event.preventDefault();
+
+                        const formData = new FormData(bidForm);
+                        const bidAmount = formData.get('bid-amount');
+                        const bidderName = formData.get('bidder-name');
+                        const bidderEmail = formData.get('bidder-Email');
+
+                        alert(`You have successfully placed a bid with us for $${bidAmount}. Please wait for confirmation via email at ${bidderEmail}.`);
+
+                        bidForm.reset();
+                    });
                 } else {
                     bidFormContainer.style.display = "none";
                     formShown = false;

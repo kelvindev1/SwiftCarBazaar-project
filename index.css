@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #00FFFF;
     color: #222;
 }
@@ -71,7 +71,6 @@ section {
     font-size: 1rem;
     color: black;
     margin-bottom: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 button {
@@ -97,38 +96,15 @@ button:hover {
     background-color: #e53935;
 }
 
-#forms-section {
+#accountsForms-section {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
 
-#forms-section h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 6px;
-}
-
-#forms-section form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    border: 1px solid #ccc;
-    padding: 20px;
-}
-
-#forms-section label {
+#accountsForms-section label {
     display: block;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-#forms-section input[type="email"],
-#forms-section input[type="text"],
-#forms-section input[type="password"] {
-    width: 90%;
-    padding: 6px;
+    margin: 6px;
 }
 
 form.hidden {
@@ -151,4 +127,37 @@ form.hidden {
     filter: brightness(110%);
     background-size: cover;
     background-position: center;
+}
+
+#bid-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#bid-form label {
+    display: block;
+}
+
+#bid-form input[type="number"],
+#bid-form input[type="text"],
+#bid-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#bid-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#bid-form input[type="submit"]:hover {
+    background-color: #45a049;
 }
