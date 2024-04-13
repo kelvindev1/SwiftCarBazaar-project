@@ -97,6 +97,7 @@ buyersWishlistButton.addEventListener('click', () => {
     displayWishlist();
 });
 
+
 fetch("http://localhost:3000/swiftCars")
     .then(Response => Response.json())
     .then(data => {
@@ -134,7 +135,10 @@ fetch("http://localhost:3000/swiftCars")
                     <label for="bid-amount">Bid Amount:</label><br>
                     <input type="number" id="bid-amount" name="bid-amount" required><br>
                     <label for="bidder-name">Bidder Name:</label><br>
-                    <input type="text" id="bidder-name" name="bidder-name" required><br>
+                    <input type="text" id="bidder-name" name="bidder-name" placeholder="Enter your name" required><br>
+                    <label for="bidder-Email">bidder-Email:</label><br>
+                    <input type="email" id="bidder-Email" name="bidder-Email" placeholder="abcd@gmail.com" required> <br>
+                    
                     <input type="submit" value="Place Bid">
                     `;
                     bidFormContainer.appendChild(bidForm);
