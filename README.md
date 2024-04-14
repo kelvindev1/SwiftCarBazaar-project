@@ -34,7 +34,7 @@ Git clone: [(https://github.com/kelvindev1/SwiftCarBazaar-project.git)]
 
 ## LIVE SITE
 
-GIT [(https://github.com/kelvindev1/SwiftCarBazaar-project.git)]
+GIT [(https://kelvindev1.github.io/SwiftCarBazaar-project/)]
 
 ## TECHNOLOGIES
 
