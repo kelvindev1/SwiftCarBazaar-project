@@ -86,17 +86,14 @@ registerForm.addEventListener('submit', (event) => {
 const carsList = document.getElementById('carslist');
 const wishlist = [];
 
-
 const wishlistContainer = document.createElement('div');
 wishlistContainer.id = 'wisheslist';
-
 
 const buyersWishlistButton = document.createElement('button');
 buyersWishlistButton.textContent = 'Buyers wishlist';
 buyersWishlistButton.addEventListener('click', () => {
     displayWishlist();
 });
-
 
 fetch("http://localhost:3000/swiftCars")
     .then(Response => Response.json())
